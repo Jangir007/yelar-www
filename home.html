@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YELAR News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Bebas+Neue&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+
+  <!-- ░░ TOP BAR ░░ -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span id="live-date"></span>
+      <span class="divider">|</span>
+      <span class="breaking-pill">🔴 СРОЧНО</span>
+      <span class="breaking-text">Новый вирус обнаружен на лайнере</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="#">RU</a>
+      <a href="#">EN</a>
+      <a href="#">KZ</a>
+      <span class="divider">|</span>
+      <a href="#" aria-label="Поиск">🔍</a>
+    </div>
+  </div>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-ye">YE</span><span class="logo-lar">LAR</span>
+        <span class="logo-news">NEWS</span>
+        <div class="logo-tagline">Издание новостей Армановых и Елешевых</div>
+      </div>
+      <div class="header-meta">
+        <div class="header-weather-peek">
+          <span class="hw-city">Алматы</span>
+          <span class="hw-temp" id="header-temp">+18°C ⛅</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="main-nav" id="main-nav">
+    <div class="nav-inner">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link active">Главная</a></li>
+        <li><a href="#" class="nav-link">Политика</a></li>
+        <li><a href="#" class="nav-link">Финансы и экономика</a></li>
+        <li><a href="#" class="nav-link">Наука</a></li>
+        <li><a href="#" class="nav-link">Анти и технологии</a></li>
+        <li><a href="#" class="nav-link">Спорт</a></li>
+        <li><a href="#" class="nav-link urgent">⚡ Срочные новости</a></li>
+        <li><a href="#" class="nav-link">Погода</a></li>
+        <li><a href="#" class="nav-link">Советы</a></li>
+        <li><a href="#" class="nav-link">Заметки</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Главная</a>
+      <a href="#">Политика</a>
+      <a href="#">Финансы и экономика</a>
+      <a href="#">Наука</a>
+      <a href="#">Анти и технологии</a>
+      <a href="#">Спорт</a>
+      <a href="#" class="urgent">⚡ Срочные новости</a>
+      <a href="#">Погода</a>
+      <a href="#">Советы</a>
+      <a href="#">Заметки</a>
+    </div>
+  </nav>
+
+  <!-- ░░ MAIN CONTENT ░░ -->
+  <main class="main-content">
+
+    <!-- HERO BLOCK -->
+    <section class="hero-block" id="hero">
+      <div class="hero-image-bg"><img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/a10d/live/c8dd7100-4a0a-11f1-ac78-2112837ce2aa.jpg.webp" alt="" width="1200px"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-category">Срочные новости</span>
+        <h1 class="hero-title">Хантавирус который был на лайнере сел на Тенерифе! Сезон 2, Серия 1 начинается?</h1>
+        <p class="hero-excerpt">Очередной всплеск инфекции на борту судна вызвал обеспокоенность специалистов. Роект Гейтса ил дело крыс?</p>
+        <div class="hero-meta">
+          <span class="hero-author">Автор: Билл Гейтс</span>
+          <span class="hero-dot">·</span>
+          <span class="hero-time">2 часа назад</span>
+          <a href="#" class="hero-read-more">Читать далее →</a>
+        </div>
+      </div>
+      <div class="hero-counter">
+        <span>👁 48 293</span>
+        <span>💬 317</span>
+      </div>
+    </section>
+
+    <!-- TWO COLUMN BLOCKS -->
+    <section class="two-col-section">
+
+      <article class="news-card card-green" id="card1">
+        <div class="card-image-wrap">
+          <div class="card-img card-img-1"><img src="https://vesti.kz/userdata/news/2025/news_371134/crop_amp/photo_242156.jpg" alt="" width="500px"></div>
+          <span class="card-cat">Спорт</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Сатпаев и Челси все! Контракт расторгнут. Талант остается в команде</h2>
+          <p class="card-excerpt">Сатпаев отказал Челси и стал патриотом страны. Праздник для болельщиков! Челси возмущен потому что контракт расторгнут. Челси хотел приобрести главную звезду Кайрата, Сатпаев остается в команде.</p>
+          <div class="card-meta">
+            <span>Дастан Сатпаев</span>
+            <span class="card-time">5 часов назад</span>
+          </div>
+          <a href="#" class="card-btn green-btn">Читать →</a>
+        </div>
+      </article>
+
+      <article class="news-card card-red" id="card2">
+        <div class="card-image-wrap">
+          <div class="card-img card-img-2"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg" alt="" width="500px"></div>
+          <span class="card-cat red-cat">Политика</span>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Иран и США все?</h2>
+          <p class="card-excerpt">Ситуация на Ближнем Востоке остается напряженной. Иран и США продолжают противостоять друг другу, несмотря на усилия международного сообщества по урегулированию конфликта.</p>
+          <div class="card-meta">
+            <span>Дональд Трамп</span>
+            <span class="card-time">8 часов назад</span>
+          </div>
+          <a href="#" class="card-btn red-btn">Читать →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather-section">
+      <div class="weather-header">
+        <h2 class="weather-title"><span class="wt-icon">🌍</span> Погода в мире</h2>
+        <span class="weather-updated">Обновлено: <span id="weather-time"></span></span>
+      </div>
+      <div class="weather-grid">
+
+        <div class="weather-card" data-city="Алматы" data-temp="+18" data-icon="⛅" data-desc="Облачно" data-hum="52" data-wind="7">
+          <div class="wc-top">
+            <span class="wc-icon">⛅</span>
+            <span class="wc-temp">+18°C</span>
+          </div>
+          <div class="wc-city">Алматы</div>
+          <div class="wc-desc">Облачно</div>
+          <div class="wc-details">
+            <span>💧 52%</span>
+            <span>💨 7 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Дубай" data-temp="+38" data-icon="☀️" data-desc="Ясно" data-hum="28" data-wind="12">
+          <div class="wc-top">
+            <span class="wc-icon">☀️</span>
+            <span class="wc-temp">+38°C</span>
+          </div>
+          <div class="wc-city">Дубай</div>
+          <div class="wc-desc">Ясно, жарко</div>
+          <div class="wc-details">
+            <span>💧 28%</span>
+            <span>💨 12 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Шанхай" data-temp="+24" data-icon="🌦" data-desc="Дождь" data-hum="78" data-wind="9">
+          <div class="wc-top">
+            <span class="wc-icon">🌦</span>
+            <span class="wc-temp">+24°C</span>
+          </div>
+          <div class="wc-city">Шанхай</div>
+          <div class="wc-desc">Дождь</div>
+          <div class="wc-details">
+            <span>💧 78%</span>
+            <span>💨 9 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Токио" data-temp="+21" data-icon="🌸" data-desc="Ясно" data-hum="60" data-wind="5">
+          <div class="wc-top">
+            <span class="wc-icon">🌤</span>
+            <span class="wc-temp">+21°C</span>
+          </div>
+          <div class="wc-city">Токио</div>
+          <div class="wc-desc">Ясно</div>
+          <div class="wc-details">
+            <span>💧 60%</span>
+            <span>💨 5 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Тегеран" data-temp="+29" data-icon="🌬" data-desc="Ветрено" data-hum="33" data-wind="18">
+          <div class="wc-top">
+            <span class="wc-icon">🌬️</span>
+            <span class="wc-temp">+29°C</span>
+          </div>
+          <div class="wc-city">Тегеран</div>
+          <div class="wc-desc">Ветрено</div>
+          <div class="wc-details">
+            <span>💧 33%</span>
+            <span>💨 18 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Нью-Дели" data-temp="+41" data-icon="🌡" data-desc="Жара" data-hum="22" data-wind="6">
+          <div class="wc-top">
+            <span class="wc-icon">🌡️</span>
+            <span class="wc-temp">+41°C</span>
+          </div>
+          <div class="wc-city">Нью-Дели</div>
+          <div class="wc-desc">Жара</div>
+          <div class="wc-details">
+            <span>💧 22%</span>
+            <span>💨 6 м/с</span>
+          </div>
+        </div>
+
+        <div class="weather-card" data-city="Вашингтон" data-temp="+16" data-icon="🌧" data-desc="Гроза" data-hum="85" data-wind="14">
+          <div class="wc-top">
+            <span class="wc-icon">🌩️</span>
+            <span class="wc-temp">+16°C</span>
+          </div>
+          <div class="wc-city">Вашингтон</div>
+          <div class="wc-desc">Гроза</div>
+          <div class="wc-details">
+            <span>💧 85%</span>
+            <span>💨 14 м/с</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">YELAR<span>NEWS</span></div>
+      <p class="footer-copy">© 2026 YELAR News. Проект Армановых и Елешовых.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
